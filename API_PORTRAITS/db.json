@@ -1,32 +1,36 @@
 [{
     "id": 1,
-    "genre": "female",
-    "face": {
-        "shape": "ovalada",
-        "skin-tone": "muy claro"
-    },
-    "mouth": "tónica",
-    "nose": "romana",
-    "ears": "pequeñas",
-    "eyes": {
-        "shape": "almendrados",
-        "color": "azul claro"
-    },
-    "hair": {
-        "hairstyle": "dos moños",
-        "color": "castaño claro",
-        "length": "corto",
-        "shape": "rizado"
-    },
-    "makeup": "llamativo",
-    "freckles": "abundantes",
-    "eyebrows": "gruesas",
-    "accesories": {
-        "glasses": "de pasta",
-        "nose-piercing": null,
-        "mouth-piercing": "labio superior",
-        "earrigs": "aro grande",
-        "hat": null
-    },
-    "neck": "largo"
+    "url": "",
+    "description": "Mujer, piel clara, cara ovalada",
+    "features": {
+        "genre": "female",
+        "face": {
+            "shape": "ovalada",
+            "skin-tone": "muy claro"
+        },
+        "mouth": "tónica",
+        "nose": "romana",
+        "ears": "pequeñas",
+        "eyes": {
+            "shape": "almendrados",
+            "color": "azul claro"
+        },
+        "hair": {
+            "hairstyle": "dos moños",
+            "color": "castaño claro",
+            "length": "corto",
+            "shape": "rizado"
+        },
+        "makeup": "llamativo",
+        "freckles": "abundantes",
+        "eyebrows": "gruesas",
+        "accesories": {
+            "glasses": "de pasta",
+            "nose-piercing": null,
+            "mouth-piercing": "labio superior",
+            "earrigs": "aro grande",
+            "hat": null
+        },
+        "neck": "largo"
+    }
 }]
