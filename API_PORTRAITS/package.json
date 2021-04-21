@@ -1,0 +1,17 @@
+{
+  "name": "api_portraits",
+  "version": "1.0.0",
+  "description": "This is the api where we can access to all the portraits that compose the data base",
+  "main": "api.js",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mónica Cortés",
+  "license": "ISC"
+}
