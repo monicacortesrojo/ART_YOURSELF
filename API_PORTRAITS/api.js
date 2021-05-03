@@ -19,6 +19,18 @@ mongoose.connect(
 );
 
 api.get("/api/portraits", (request, response) => {
+    Portraits.find((error, data) => {
+        if (error) {
+            console.error(error);
+        } else {
+            response.send(data);
+        }
+    });
+});
+
+/*
+
+api.get("/api/portraits", (request, response) => {
     Portraits.findOne({
             genre: request.body.genre,
             skintone: request.body.skintone,
@@ -41,7 +53,7 @@ api.get("/api/portraits", (request, response) => {
             }
         }
     );
-});
+});*/
 
 const PORT = 2021;
 api.listen(PORT);
