@@ -23,46 +23,37 @@ const getPortraits = () => {
         .then((data) => {
             console.log(data);
 
-            const matchPortrait = data.filter((portraits) => {
-                currentGenre === portraits.genre &&
-                    currentSkintone === portraits.skintone &&
-                    currentFreckles === portraits.freckles &&
-                    currentFaceshape === portraits.faceshape &&
-                    currentEyeshape === portraits.eyeshape &&
-                    currentEyescolor === portraits.eyescolor &&
-                    currentEyebrows === portraits.eyebrows &&
-                    currentNoseshape === portraits.noseshape &&
-                    currentLips === portraits.lips &&
-                    currentHaircolor === portraits.haircolor &&
-                    currentHairstyle === portraits.hairstyle &&
-                    currentZodiacsign === portraits.zodiacsign;
-            });
+            const matchPortrait = (portrait) => {
+                if (
+                    currentGenre === portrait.genre &&
+                    currentSkintone === portrait.skintone &&
+                    currentFreckles === portrait.freckles &&
+                    currentFaceshape === portrait.faceshape &&
+                    currentEyeshape === portrait.eyeshape &&
+                    currentEyescolor === portrait.eyescolor &&
+                    currentEyebrows === portrait.eyebrows &&
+                    currentNoseshape === portrait.noseshape &&
+                    currentLips === portrait.lips &&
+                    currentHaircolor === portrait.haircolor &&
+                    currentHairstyle === portrait.hairstyle &&
+                    currentZodiacsign === portrait.zodiacsign
+                ) {
+                    return true;
+                } else {
+                    return false;
+                }
+            };
 
-            if (matchPortrait === true) {
-                console.log(matchPortrait);
-            }
+            const matchedPortrait = data.filter(matchPortrait);
+            console.log(matchedPortrait);
 
-            /*
-                                                                       const portraitStructure = document.getElementById("portraitStructure");
-                                                                       data.portraits.filter(
-                                                                           (portrait) =>
-                                                                           currentGenre === portrait.genre ||
-                                                                           currentSkintone === portrait.skintone ||
-                                                                           currentFreckles === portrait.freckles ||
-                                                                           currentFaceshape === portrait.faceshape ||
-                                                                           currentEyeshape === portrait.eyeshape ||
-                                                                           currentEyescolor === portrait.eyescolor ||
-                                                                           currentEyebrows === portrait.eyebrows ||
-                                                                           currentNoseshape === portrait.noseshape ||
-                                                                           currentLips === portrait.lips ||
-                                                                           currentHaircolor === portrait.haircolor ||
-                                                                           currentHairstyle === portrait.hairstyle ||
-                                                                           currentZodiacsign === portrait.zodiacsign
-                                                                       );
-                                                                       const portraitImage = document.createElement("img");
-                                                                       portraitImage.src = portrait.url;
+            const portraitStructure = document.getElementById("portraitStructure");
+            portraitStructure.innerHTML = "";
 
-                                                                       portraitStructure.appendChild(portraitImage);*/
+            const portraitImage = document.createElement("img");
+            portraitImage.src = matchedPortrait[0].url;
+
+            portraitStructure.appendChild(portraitImage);
         })
         .catch((error) => {
             console.error(error);
