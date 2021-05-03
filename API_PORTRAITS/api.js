@@ -1,35 +1,14 @@
-const express = require("express");
-const bodyParser = require("body-parser");
+const { apiInit } = require("./configuration/apiConf");
 const mongoose = require("mongoose");
-const Portrait = require("./models/portraits");
+const Portraits = require("./models/portraits");
 
-const api = express();
+const api = apiInit();
 
-// CONF CORS
-
-api.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header(
-        "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    next();
-    api.options("*", (req, res) => {
-        res.header(
-            "Access-Control-Allow-Methods",
-            "GET, PATCH, PUT, POST, DELETE, OPTIONS"
-        );
-        res.send();
-    });
-});
-
-api.use(bodyParser.json());
-api.use(bodyParser.urlencoded({ extended: false }));
-
-const urlApi = "mongodb://localhost/PORTRAITS";
+const mongoURL =
+    "mongodb+srv://monicacortesrojo:monicacortesrojo@cluster0.cvptt.mongodb.net/BBDD?retryWrites=true&w=majority";
 
 mongoose.connect(
-    urlApi, { useNewUrlParser: true, useUnifiedTopology: true },
+    mongoURL, { useNewUrlParser: true, useUnifiedTopology: true },
     (error, response) => {
         if (error) {
             console.error(error, "Error al conectar con la base de datos PORTRAITS");
@@ -39,5 +18,31 @@ mongoose.connect(
     }
 );
 
-api.listen(2021);
-console.log("API corriendo en puerto 2021");
+api.get("/api/portraits", (request, response) => {
+    Portraits.findOne({
+            genre: request.body.genre,
+            skintone: request.body.skintone,
+            freckles: request.body.freckles,
+            faceshape: request.body.faceshape,
+            eyeshape: request.body.eyeshape,
+            eyescolor: request.body.eyescolor,
+            eyebrows: request.body.eyebrows,
+            noseshape: request.body.noseshape,
+            lips: request.body.lips,
+            haircolor: request.body.haircolor,
+            hairstyle: request.body.hairstyle,
+            zodiacsign: request.body.zodiacsign,
+        },
+        (error, data) => {
+            if (error) {
+                console.error(error);
+            } else {
+                response.send(data);
+            }
+        }
+    );
+});
+
+const PORT = 2021;
+api.listen(PORT);
+console.log(`API corriendo en puerto ${PORT}`);

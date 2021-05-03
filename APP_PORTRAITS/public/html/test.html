@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Varela&display=swap" rel="stylesheet" />
+    <title>QUIZ</title>
+</head>
+
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Art Yourself</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="#">Inicio</a>
+                    <a class="nav-link" href="#">Tienda</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <div id="questionStructure">
+            <h3 id="questionNumber"></h3>
+            <h2 id="questionTitle"></h2>
+            <ul class="list-group" id="answersGroup">
+                <li class="list-group-item" id="answerValue">
+                    <input class="form-check-input me-1" type="radio" />
+                </li>
+                <li class="list-group-item" id="answerValue">
+                    <input class="form-check-input me-1" type="radio" />
+                </li>
+                <li class="list-group-item" id="answerValue">
+                    <input class="form-check-input me-1" type="radio" id="answerRadio" />
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="buttonsGroup">
+            <!-- <button type="button" class="btn btn-outline-light" onclick="cleanLocalStorage()">
+          reiniciar
+        </button> -->
+        </div>
+    </div>
+</body>
+<script src="../js/test.js"></script>
+
+</html>
