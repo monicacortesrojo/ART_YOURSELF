@@ -35,8 +35,8 @@ const getQuestions = (id = 1) => {
                     const answerValue = document.createElement("li");
                     answerValue.innerHTML = answer;
                     answerValue.className = "list-group-item";
-                    const answerRadio = document.createElement("input");
 
+                    const answerRadio = document.createElement("input");
                     answerRadio.className = "form-check-input me-1";
                     answerRadio.value = answer;
                     answerRadio.type = "radio";
@@ -55,10 +55,6 @@ const getQuestions = (id = 1) => {
 
                     answersGroup.appendChild(answerValue);
                     answerValue.appendChild(answerRadio);
-
-                    const buttonsGroup = document.createElement("div");
-                    buttonsGroup.className =
-                        "d-grid gap-2 d-md-flex justify-content-md-end";
                 });
 
                 //METO TODOS LOS ELEMENTOS DENTRO DE LA EXTRUCTURA
@@ -88,11 +84,14 @@ const getQuestions = (id = 1) => {
                 nextButton.innerText = "siguiente";
 
                 nextButton.addEventListener("click", (event) => {
+                    const showPortraitButton = document.createElement("a");
+                    showPortraitButton.innerText = "descubre tu retrato";
+                    showPortraitButton.href = "../matchPortrait.html";
                     getQuestions(
                         id < 12 ?
                         (event.target.id = id + 1) :
-                        ((buttonsGroup.innerHTML = ""),
-                            (questionStructure.innerHTML = ""))
+                        (questionStructure.innerHTML = ""),
+                        questionStructure.appendChild(showPortraitButton)
                     );
                 });
 

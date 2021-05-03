@@ -42,8 +42,12 @@ const getQuestions = (id = 1) => {
                     answerRadio.type = "radio";
                     answerRadio.name = "answerValues";
 
-                    answerRadio.addEventListener("click", (event) => {
-                        captureAnswer(event.target.answer);
+                    answerRadio.addEventListener("change", (event) => {
+                        if (answerRadio.checked) {
+                            captureAnswer(event.target.answer);
+                        } else {
+                            alert("debes escoger una caracteristica");
+                        }
                     });
 
                     //LOCAL STORAGE
@@ -55,10 +59,6 @@ const getQuestions = (id = 1) => {
 
                     answersGroup.appendChild(answerValue);
                     answerValue.appendChild(answerRadio);
-
-                    const buttonsGroup = document.createElement("div");
-                    buttonsGroup.className =
-                        "d-grid gap-2 d-md-flex justify-content-md-end";
                 });
 
                 //METO TODOS LOS ELEMENTOS DENTRO DE LA EXTRUCTURA
