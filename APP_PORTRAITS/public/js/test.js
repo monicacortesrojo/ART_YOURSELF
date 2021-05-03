@@ -55,6 +55,10 @@ const getQuestions = (id = 1) => {
 
                     answersGroup.appendChild(answerValue);
                     answerValue.appendChild(answerRadio);
+
+                    const buttonsGroup = document.createElement("div");
+                    buttonsGroup.className =
+                        "d-grid gap-2 d-md-flex justify-content-md-end";
                 });
 
                 //METO TODOS LOS ELEMENTOS DENTRO DE LA EXTRUCTURA
@@ -85,7 +89,7 @@ const getQuestions = (id = 1) => {
 
                 nextButton.addEventListener("click", (event) => {
                     getQuestions(
-                        id < 12 || answerRadio.checked === true ?
+                        id < 12 ?
                         (event.target.id = id + 1) :
                         ((buttonsGroup.innerHTML = ""),
                             (questionStructure.innerHTML = ""))
@@ -109,6 +113,7 @@ const getQuestions = (id = 1) => {
                 buttonsGroup.appendChild(previousButton);
                 buttonsGroup.appendChild(nextButton);
 
+                //meto todos los elementos en la estructura
                 questionStructure.appendChild(questionNumber);
                 questionStructure.appendChild(questionTitle);
                 questionStructure.appendChild(answersGroup);
