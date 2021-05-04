@@ -92,11 +92,13 @@ const getQuestions = (id = 1) => {
                     const showPortraitButton = document.createElement("a");
                     showPortraitButton.innerText = "descubre tu retrato";
                     showPortraitButton.href = "../matchPortrait.html";
+                    showPortraitButton.hidden = false;
+
                     getQuestions(
                         id < 12 ?
                         (event.target.id = id + 1) :
                         (questionStructure.innerHTML = ""),
-                        questionStructure.appendChild(showPortraitButton)
+                        (showPortraitButton.hidden = true)
                     );
                 });
 

@@ -89,14 +89,13 @@ const getQuestions = (id = 1) => {
                 nextButton.disabled = true;
 
                 nextButton.addEventListener("click", (event) => {
-                    const showPortraitButton = document.createElement("a");
-                    showPortraitButton.innerText = "descubre tu retrato";
-                    showPortraitButton.href = "../matchPortrait.html";
                     getQuestions(
                         id < 12 ?
-                        (event.target.id = id + 1) :
+                        (event.target.id = id + 1)(
+                            (document.getElementById("endTest").hidden = true)
+                        ) :
                         (questionStructure.innerHTML = ""),
-                        questionStructure.appendChild(showPortraitButton)
+                        (document.getElementById("endTest").hidden = false)
                     );
                 });
 
@@ -130,3 +129,29 @@ const getQuestions = (id = 1) => {
 };
 
 getQuestions();
+
+const finalizeTest = () => {
+    const endTest = document.getElementById("endTest");
+    endTest.hidden = true;
+
+    const spinner = document.createElement("div");
+    spinner.className = "spinner-border";
+    spinner.role = "status";
+
+    const interactiveQuote = document.createElement("h1");
+
+    setTimeout(function() {
+        interactiveQuote.innerHTML = "Azúcar";
+    }, 0);
+    setTimeout(function() {
+        interactiveQuote.innerHTML = "Especias";
+    }, 1500);
+    setTimeout(function() {
+        interactiveQuote.innerHTML = "Y muchas cosas bonitas";
+    }, 3000);
+
+    endTest.appendChild(spinner);
+    endTest.appendChild(interactiveQuote);
+};
+
+finalizeTest();
