@@ -41,9 +41,12 @@ const getQuestions = (id = 1) => {
                     answerRadio.value = answer;
                     answerRadio.type = "radio";
                     answerRadio.name = "answerValues";
+                    answerRadio.required = true;
+                    answerRadio.id = "answerRadio";
 
                     answerRadio.addEventListener("click", (event) => {
                         captureAnswer(event.target.answer);
+                        document.getElementById("nextButton").disabled = false;
                     });
 
                     //LOCAL STORAGE
@@ -82,6 +85,8 @@ const getQuestions = (id = 1) => {
                 nextButton.className = "btn btn-outline-light ";
                 nextButton.type = "button";
                 nextButton.innerText = "siguiente";
+                nextButton.id = "nextButton";
+                nextButton.disabled = true;
 
                 nextButton.addEventListener("click", (event) => {
                     const showPortraitButton = document.createElement("a");
