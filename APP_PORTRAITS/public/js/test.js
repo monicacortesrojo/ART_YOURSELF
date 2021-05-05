@@ -89,16 +89,10 @@ const getQuestions = (id = 1) => {
                 nextButton.disabled = true;
 
                 nextButton.addEventListener("click", (event) => {
-                    const showPortraitButton = document.createElement("a");
-                    showPortraitButton.innerText = "descubre tu retrato";
-                    showPortraitButton.href = "../matchPortrait.html";
-                    showPortraitButton.hidden = false;
-
                     getQuestions(
                         id < 12 ?
                         (event.target.id = id + 1) :
-                        (questionStructure.innerHTML = ""),
-                        (showPortraitButton.hidden = true)
+                        (location.href = "../matchPortrait.html")
                     );
                 });
 
@@ -120,6 +114,7 @@ const getQuestions = (id = 1) => {
                 buttonsGroup.appendChild(nextButton);
 
                 //meto todos los elementos en la estructura
+
                 questionStructure.appendChild(questionNumber);
                 questionStructure.appendChild(questionTitle);
                 questionStructure.appendChild(answersGroup);
