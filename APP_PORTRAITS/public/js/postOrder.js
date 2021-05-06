@@ -4,7 +4,9 @@ const postOrder = () => {
         surname: document.getElementById("surname").value,
         email: document.getElementById("email").value,
         description: document.getElementById("description").value,
-        //url: document.getElementById("url").value,
+        url: `http://localhost:2022/img/${
+      document.getElementById("fileName").value
+    }`,
     };
 
     const apiOrders = "http://localhost:2023/api/orders";
@@ -24,7 +26,7 @@ const postOrder = () => {
             document.getElementById("surname").value = "";
             document.getElementById("email").value = "";
             document.getElementById("description").value = "";
-            //document.getElementById("url").value = "";
+            `http://localhost:2022/img/${document.getElementById("fileName").value}`;
         })
         .catch((error) => {
             console.error(error);

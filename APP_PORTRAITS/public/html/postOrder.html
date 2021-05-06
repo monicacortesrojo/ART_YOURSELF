@@ -26,7 +26,7 @@
                 </nav>
             </div>
         </header>
-        <form>
+        <form action="/uploadFile" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="name" class="form-label">Tu nombre</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" />
@@ -44,7 +44,12 @@
                 <label for="type" class="form-label">Tus deseos son órdenes</label>
                 <input type="text" class="form-control" id="description" name="description" placeholder="Describe como quieres tu retrato" />
             </div>
-            <button type="button" onclick="postOrder()" class="btn btn-primary">
+            <div class="mb-3">
+                <label for="type" class="form-label">Sube tu imagen</label>
+                <input type="file" name="upload" multiple accept="image/x-png,image/gif,image" id="fileName" />
+            </div>
+
+            <button type="submit" onclick="postOrder()" class="btn btn-primary" value="Upload">
           hacer pedido
         </button>
         </form>

@@ -24,6 +24,7 @@ api.post("/api/orders", (request, response) => {
         surname: request.body.surname,
         email: request.body.email,
         description: request.body.description,
+        url: request.body.url,
         //url: request.body.description,
     });
 
