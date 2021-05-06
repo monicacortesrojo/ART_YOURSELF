@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Varela&display=swap" rel="stylesheet" />
+    <title>POST ORDER</title>
+</head>
+
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <a href="index.html">
+                    <h3 class="masthead-brand">Art Yourself</h3>
+                </a>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                    <a class="nav-link" href="postOrder.html">Pedidos</a>
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Tu nombre</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" />
+            </div>
+            <div class="mb-3">
+                <label for="type" class="form-label">Tu apellido</label>
+                <input type="text" class="form-control" id="surname" name="surname" placeholder="Tu apellido" />
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+            </div>
+            <div class="mb-3">
+                <label for="type" class="form-label">Tus deseos son órdenes</label>
+                <input type="text" class="form-control" id="description" name="description" placeholder="Describe como quieres tu retrato" />
+            </div>
+            <button type="button" onclick="postOrder()" class="btn btn-primary">
+          hacer pedido
+        </button>
+        </form>
+    </div>
+</body>
+<script src="../js/postOrder.js"></script>
+
+</html>

@@ -92,7 +92,8 @@ const getQuestions = (id = 1) => {
                     getQuestions(
                         id < 12 ?
                         (event.target.id = id + 1) :
-                        (location.href = "../matchPortrait.html")
+                        (location.href = "../matchPortrait.html"),
+                        (nextButton.innerText = "finalizar")
                     );
                 });
 
