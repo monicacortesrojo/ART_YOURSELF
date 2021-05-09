@@ -29,30 +29,25 @@
 
         <div class="row" style="margin-top: 100px">
             <div class="col-sm-6">
-                <div class="card">
-                    <img src="../img/1.PNG" class="card-img-top" alt="..." />
-                </div>
+                <div id="portraitStructure" class="card"></div>
             </div>
             <div class="col-sm-6">
-                <p class="card-text" style="margin-bottom: 30px">
+                <p class="card-text" style="margin-left: auto; margin-right: auto">
                     Azúcar, especias y muchas cosas bonitas fueron los ingredientes escogidos para crear tu retrato personalizado. Cómpralo ya!!
                 </p>
-                <div id="smart-button-container">
+                <div id="smart-button-container" class="paypal-buttons">
                     <div style="text-align: center">
                         <div id="paypal-button-container"></div>
                     </div>
                 </div>
-
-                <p>
-                    <a href="test.html" class="artsmbtn">intentar de nuevo</a>
-                </p>
             </div>
         </div>
-
-        <!-- <div id="transitionStructure" class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <h1 id="interactiveQuote"></h1>
-        </div>
-        <div id="portraitStructure"></div> -->
+        <p style="margin-top: 100px">
+            ¿No te convence el resultado? <br />
+            <button class="artsmbtn" type="button" onclick="restartQuestions()">
+          vuelve a empezar
+        </button>
+        </p>
     </div>
 </body>
 <script src="../js/matchPortrait.js"></script>

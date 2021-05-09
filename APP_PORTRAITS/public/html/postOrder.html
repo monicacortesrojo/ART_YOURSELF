@@ -26,30 +26,28 @@
                 </nav>
             </div>
         </header>
+        <p>
+            Si quieres un retrato aún más personalizado contesta a este formulario
+        </p>
         <form action="/uploadFile" method="post" enctype="multipart/form-data">
             <div class="mb-3">
-                <label for="name" class="form-label">Tu nombre</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" />
+                <input type="text" class="form-order" id="name" name="name" placeholder="tu nombre" />
             </div>
             <div class="mb-3">
-                <label for="type" class="form-label">Tu apellido</label>
-                <input type="text" class="form-control" id="surname" name="surname" placeholder="Tu apellido" />
+                <input type="text" class="form-order" id="surname" name="surname" placeholder="tu apellido" />
             </div>
 
             <div class="mb-3">
-                <label for="type" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+                <input type="email" class="form-order" id="email" name="email" placeholder="email" />
             </div>
             <div class="mb-3">
-                <label for="type" class="form-label">Tus deseos son órdenes</label>
-                <input type="text" class="form-control" id="description" name="description" placeholder="Describe como quieres tu retrato" />
+                <input type="text" class="form-order" id="description" name="description" placeholder="Tus deseos son órdenes" />
             </div>
             <div class="mb-3">
-                <label for="type" class="form-label">Sube tu imagen</label>
-                <input type="file" name="upload" multiple accept="image/x-png,image/gif,image" id="fileName" />
+                <input type="file" name="upload" multiple accept="image/x-png,image/gif,image" id="fileName" class="artsmbtn" />
             </div>
 
-            <button type="submit" onclick="postOrder()" class="btn btn-primary" value="Upload">
+            <button type="submit" onclick="postOrder()" class="artprincipalbtn" value="Upload">
           hacer pedido
         </button>
         </form>
