@@ -45,7 +45,6 @@ const getQuestions = (id = 1) => {
                     answerRadio.required = true;
                     answerRadio.id = `${answer}Radio`;
                     answerRadio.style.display = "none";
-                    const answerChecked = (answerRadio.checked = true);
 
                     const answerLabel = document.createElement("label");
                     answerLabel.htmlFor = `${answer}Radio`;
@@ -55,11 +54,6 @@ const getQuestions = (id = 1) => {
                     answerRadio.addEventListener("click", (event) => {
                         captureAnswer(event.target.answer);
                         document.getElementById("nextButton").disabled = false;
-                        if (answerChecked.id === answerLabel.htmlFor) {
-                            answerLabel.className = "radio-checked";
-                        } else {
-                            answerLabel.className = "artlistitem";
-                        }
                     });
 
                     //LOCAL STORAGE
