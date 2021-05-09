@@ -20,11 +20,14 @@ const getQuestions = (id = 1) => {
             data.forEach((questions) => {
                 const questionNumber = document.createElement("h3");
                 questionNumber.innerHTML = questions.id;
-                questionNumber.className = "questionNumber";
+                questionNumber.className = "artnumber";
 
                 const questionTitle = document.createElement("h2");
                 questionTitle.innerHTML = questions.title;
-                questionTitle.className = "questionTitle";
+                questionTitle.className = "arttitle";
+
+                const answerContainer = document.createElement("div");
+                answerContainer.className = "answer-container";
 
                 const answersGroup = document.createElement("ul");
                 answersGroup.className = "list-group";
@@ -33,8 +36,6 @@ const getQuestions = (id = 1) => {
 
                 questions.answers.forEach((answer) => {
                     const answerValue = document.createElement("li");
-                    answerValue.innerHTML = answer;
-                    answerValue.className = "list-group-item";
 
                     const answerRadio = document.createElement("input");
                     answerRadio.className = "form-check-input me-1";
@@ -42,11 +43,23 @@ const getQuestions = (id = 1) => {
                     answerRadio.type = "radio";
                     answerRadio.name = "answerValues";
                     answerRadio.required = true;
-                    answerRadio.id = "answerRadio";
+                    answerRadio.id = `${answer}Radio`;
+                    answerRadio.style.display = "none";
+                    const answerChecked = (answerRadio.checked = true);
+
+                    const answerLabel = document.createElement("label");
+                    answerLabel.htmlFor = `${answer}Radio`;
+                    answerLabel.innerHTML = answer;
+                    answerLabel.className = "artlistitem";
 
                     answerRadio.addEventListener("click", (event) => {
                         captureAnswer(event.target.answer);
                         document.getElementById("nextButton").disabled = false;
+                        if (answerChecked.id === answerLabel.htmlFor) {
+                            answerLabel.className = "radio-checked";
+                        } else {
+                            answerLabel.className = "artlistitem";
+                        }
                     });
 
                     //LOCAL STORAGE
@@ -56,8 +69,10 @@ const getQuestions = (id = 1) => {
                         console.log(localStorage);
                     };
 
+                    answerContainer.appendChild(answersGroup);
                     answersGroup.appendChild(answerValue);
                     answerValue.appendChild(answerRadio);
+                    answerValue.appendChild(answerLabel);
                 });
 
                 //METO TODOS LOS ELEMENTOS DENTRO DE LA EXTRUCTURA
@@ -67,10 +82,11 @@ const getQuestions = (id = 1) => {
                 const buttonsGroup = document.createElement("div");
                 buttonsGroup.className =
                     "d-grid gap-2 d-md-flex justify-content-md-end";
+                buttonsGroup.id = "buttonsGroup";
 
                 //creo el botón previous
                 const previousButton = document.createElement("button");
-                previousButton.className = "btn btn-outline-light ";
+                previousButton.className = "artsmbtn prev";
                 previousButton.type = "button";
                 previousButton.innerText = "anterior";
 
@@ -82,7 +98,7 @@ const getQuestions = (id = 1) => {
 
                 //creo el botón next
                 const nextButton = document.createElement("button");
-                nextButton.className = "btn btn-outline-light ";
+                nextButton.className = "artsmbtn next";
                 nextButton.type = "button";
                 nextButton.innerText = "siguiente";
                 nextButton.id = "nextButton";
@@ -102,7 +118,7 @@ const getQuestions = (id = 1) => {
 
                 //creo el botón de reiniciar
                 const restartButton = document.createElement("button");
-                restartButton.className = "btn-sm btn btn-dark";
+                restartButton.className = "artsmbtn restart";
                 restartButton.type = "button";
                 restartButton.innerText = "reiniciar";
                 restartButton.addEventListener("click", (event) => {
@@ -121,7 +137,7 @@ const getQuestions = (id = 1) => {
 
                 questionStructure.appendChild(questionNumber);
                 questionStructure.appendChild(questionTitle);
-                questionStructure.appendChild(answersGroup);
+                questionStructure.appendChild(answerContainer);
                 questionStructure.appendChild(buttonsGroup);
             });
         })
