@@ -1,0 +1,11 @@
+.mastfoot {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.choosen {
+    background: rgb(142, 189, 104);
+}
+
+.unchosen {
+    background: #000;
+}

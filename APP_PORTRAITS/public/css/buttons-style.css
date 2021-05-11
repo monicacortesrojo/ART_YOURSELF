@@ -1,0 +1,73 @@
+#buttonsGroup {
+    position: relative;
+    margin-top: 50px;
+}
+
+.mainbtn {
+    padding: 15px 30px;
+    background-color: #004c38;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    box-shadow: 0px 8px 20px #97434350;
+    border: none;
+}
+
+.mainbtn:hover {
+    background-color: #a53711;
+}
+
+.smbtn {
+    padding: 10px 25px;
+    background-color: #ffffff4f;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 50px;
+    box-shadow: 0px 8px 20px #97434350;
+    border: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+}
+
+.prev {
+    position: absolute;
+    left: 0;
+}
+
+.restart {
+    background-color: #004c38;
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+
+.smbtn:hover {
+    background-color: #ffffff23;
+}
+
+.restart:hover {
+    background-color: #008a6a;
+}
+
+.smbtn:disabled {
+    background-color: #ffffff00;
+    color: #ffffff00;
+    box-shadow: 0px 8px 20px #97434300;
+}
+
+.paypal-buttons {
+    width: 60px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}

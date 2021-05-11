@@ -11,7 +11,7 @@ mongoose.connect(
     mongoURL, { useNewUrlParser: true, useUnifiedTopology: true },
     (error, response) => {
         if (error) {
-            console.error(error, "Error al conectar con la base de datos ORDERS");
+            console.error(error, "Error al conectar con la base de datos QUESTIONS");
         } else {
             console.log("Base de datos conectada correctamente");
         }
@@ -24,8 +24,8 @@ api.post("/api/orders", (request, response) => {
         surname: request.body.surname,
         email: request.body.email,
         description: request.body.description,
-        url: request.body.url,
-        //url: request.body.description,
+        imgUrl: request.body.imgUrl,
+        finalized: request.body.finalized,
     });
 
     newOrder.save((error) => {
@@ -34,7 +34,7 @@ api.post("/api/orders", (request, response) => {
         } else {
             response.send({
                 success: true,
-                message: "Order añadida correctamente",
+                message: "Pedido realizado correctamente",
                 newOrder,
             });
         }
@@ -43,4 +43,4 @@ api.post("/api/orders", (request, response) => {
 
 const PORT = 2023;
 api.listen(PORT);
-console.log(`API ORDERS corriendo en puerto ${PORT}`);
+console.log("API corriendo en puerto 2023");

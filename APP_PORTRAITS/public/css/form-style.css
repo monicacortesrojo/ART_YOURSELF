@@ -1,0 +1,88 @@
+#questionStructure {
+    margin-top: 70px;
+}
+
+.listitem {
+    padding: 15px 30px;
+    background-color: #ffffff23;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    box-shadow: 0px 8px 20px #97434350;
+    margin-bottom: 20px;
+    list-style: none;
+    width: 400px;
+}
+
+li {
+    list-style: none;
+}
+
+.listitem:hover {
+    background-color: #ffffff4f;
+}
+
+.checked-radio {
+    padding: 15px 30px;
+    background-color: #00614a;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    box-shadow: 0px 8px 20px #97434350;
+    margin-bottom: 20px;
+    list-style: none;
+    width: 400px;
+}
+
+.form-order {
+    padding: 15px 30px;
+    background-color: #ffffff00;
+    border-bottom: solid 1px #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 20px;
+    list-style: none;
+    width: 400px;
+    height: 20px;
+}
+
+.form-order::placeholder {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+input[type="file"]#imgUrl {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label[for="imgUrl"] {
+    padding: 10px 25px;
+    background-color: #ffffff4f;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 50px;
+    box-shadow: 0px 8px 20px #97434350;
+    border: none;
+    cursor: pointer;
+}
+
+label[for="imgUrl"]:hover {
+    background-color: #ffffff23;
+}

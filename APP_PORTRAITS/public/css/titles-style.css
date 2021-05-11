@@ -1,0 +1,59 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+    font-family: "Shrikhand", cursive;
+}
+
+.title-order {
+    font-size: 16px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #004c38;
+}
+
+p {
+    font-size: 14px;
+}
+
+.bottom-text {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.bottom {
+    margin-bottom: 50px;
+}
+
+.principaltext {
+    margin-bottom: 60px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.question-number {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #004c38;
+    box-shadow: 0px 8px 20px #97434350;
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.question-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#main-text {
+    margin-bottom: 50px;
+}

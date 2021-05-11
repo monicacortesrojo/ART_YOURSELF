@@ -8,7 +8,7 @@ const ordersSchema = new Schema({
     surname: String,
     email: String,
     description: String,
-    url: String,
+    img: String,
     finalized: Boolean,
 }, { versionKey: false });
 
