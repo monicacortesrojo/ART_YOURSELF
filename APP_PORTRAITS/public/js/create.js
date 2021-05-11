@@ -89,13 +89,13 @@ const getQuestions = (id = 1) => {
 
                 nextButton.addEventListener("click", (event) => {
                     getQuestions(
-                        id < 12 ?
+                        id < 5 ?
                         (event.target.id = id + 1) :
                         (location.href = "../buy.html")
                     );
                 });
 
-                if (id === 12) {
+                if (id === 5) {
                     nextButton.innerText = "finalizar";
                 }
 

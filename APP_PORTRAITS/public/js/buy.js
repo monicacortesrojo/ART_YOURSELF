@@ -4,17 +4,10 @@ answerStorage = window.localStorage;
 const getPortraits = () => {
     const apiPortraits = "http://localhost:2021/api/portraits";
 
-    const currentGenre = localStorage.getItem("genre");
     const currentSkintone = localStorage.getItem("skintone");
     const currentFreckles = localStorage.getItem("freckles");
-    const currentFaceshape = localStorage.getItem("faceshape");
-    const currentEyeshape = localStorage.getItem("eyeshape");
     const currentEyescolor = localStorage.getItem("eyescolor");
-    const currentEyebrows = localStorage.getItem("eyebrows");
-    const currentNoseshape = localStorage.getItem("noseshape");
-    const currentLips = localStorage.getItem("lips");
     const currentHaircolor = localStorage.getItem("haircolor");
-    const currentHairstyle = localStorage.getItem("hairstyle");
     const currentZodiacsign = localStorage.getItem("zodiacsign");
 
     fetch(apiPortraits)
@@ -26,17 +19,10 @@ const getPortraits = () => {
 
             const matchPortrait = (portrait) => {
                 if (
-                    currentGenre === portrait.genre &&
                     currentSkintone === portrait.skintone &&
                     currentFreckles === portrait.freckles &&
-                    currentFaceshape === portrait.faceshape &&
-                    currentEyeshape === portrait.eyeshape &&
                     currentEyescolor === portrait.eyescolor &&
-                    currentEyebrows === portrait.eyebrows &&
-                    currentNoseshape === portrait.noseshape &&
-                    currentLips === portrait.lips &&
                     currentHaircolor === portrait.haircolor &&
-                    currentHairstyle === portrait.hairstyle &&
                     currentZodiacsign === portrait.zodiacsign
                 ) {
                     return true;
@@ -70,5 +56,5 @@ getPortraits();
 //Función para reiniciar test
 const restartQuestions = () => {
     localStorage.clear();
-    location.href = "../test.html";
+    location.href = "../create.html";
 };

@@ -1,61 +1,583 @@
 [{
-        "url": "https://i.ibb.co/fCTmCTb/8.png",
-        "genre": "mujer",
+        "url": "https://i.ibb.co/ngPSYMT/mujer-portrait-43.jpg",
         "skintone": "claro",
         "freckles": "si",
-        "faceshape": "ovalada",
-        "eyeshape": "almendrados",
-        "eyescolor": "azul",
-        "eyebrows": "finas",
-        "noseshape": "aguileña",
-        "lips": "delgados",
+        "eyescolor": "claro",
         "haircolor": "negro",
-        "hairstyle": "melena larga lisa",
-        "zodiacsign": "aries"
+        "zodiacsign": "tímida"
     },
     {
-        "url": "https://i.ibb.co/GRNDzP1/Captura.png",
-        "genre": "mujer",
-        "skintone": "medio",
+        "url": "https://i.ibb.co/VHh4PWn/mujer-portrait-18.jpg",
+        "skintone": "claro",
         "freckles": "no",
-        "faceshape": "redonda",
-        "eyeshape": "saltones",
-        "eyescolor": "verde",
-        "eyebrows": "gruesas",
-        "noseshape": "ancha",
-        "lips": "gruesos",
-        "haircolor": "rubio",
-        "hairstyle": "melena corta lisa con flequillo",
-        "zodiacsign": "piscis"
+        "eyescolor": "claro",
+        "haircolor": "negro",
+        "zodiacsign": "tímida"
     },
     {
-        "url": "https://i.ibb.co/kQKG0dC/9.png",
-        "genre": "hombre",
-        "skintone": "medio",
-        "freckles": "no",
-        "faceshape": "redonda",
-        "eyeshape": "saltones",
-        "eyescolor": "verde",
-        "eyebrows": "gruesas",
-        "noseshape": "ancha",
-        "lips": "gruesos",
-        "haircolor": "rubio",
-        "hairstyle": "tupé",
-        "zodiacsign": "virgo"
-    },
-    {
-        "url": "https://i.ibb.co/CWxdgHq/7.png",
-        "genre": "mujer",
+        "url": "https://i.ibb.co/pzWjZbZ/mujer-portrait-34.jpg",
         "skintone": "oscuro",
         "freckles": "si",
-        "faceshape": "ovalada",
-        "eyeshape": "almendrados",
-        "eyescolor": "azul",
-        "eyebrows": "finas",
-        "noseshape": "aguileña",
-        "lips": "delgados",
+        "eyescolor": "castaño",
         "haircolor": "negro",
-        "hairstyle": "rapado",
-        "zodiacsign": "escorpio"
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/yqwDMBg/mujer-portrait-17.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "negro",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/HDZj88x/mujer-portrait-35.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "negro",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/MssLrnR/mujer-portrait-10.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "negro",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/pzWjZbZ/mujer-portrait-34.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "negro",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/p17qzdr/mujer-portrait-09.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "negro",
+        "zodiacsign": "tímida"
+    },
+
+    {
+        "url": "https://i.ibb.co/S3Pt4Xj/mujer-portrait-27.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "negro",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/MnZYvSR/mujer-portrait-02.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "negro",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/48Njw0J/mujer-portrait-26.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "negro",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/rQ390Wb/mujer-portrait-01.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "negro",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/N6PdBQY/mujer-portrait-48.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "claro",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/BzvK2hD/mujer-portrait-24.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/KVsx8nh/mujer-portrait-40.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/dJZH9VD/mujer-portrait-23.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/FHSYDN9/mujer-portrait-41.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/rQqDxvn/mujer-portrait-16.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/KVsx8nh/mujer-portrait-40.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/Z8w10QH/mujer-portrait-15.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+
+    {
+        "url": "https://i.ibb.co/3M8Xt51/mujer-portrait-33.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/KmRt7kT/mujer-portrait-08.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/gwjfxYt/mujer-portrait-32.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/Qcjvdg9/mujer-portrait-07.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "rubio",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/PQtLVh1/mujer-portrait-22.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "claro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/PQtLVh1/mujer-portrait-22.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/wNYwhH4/mujer-portrait-38.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/fNDnbWS/mujer-portrait-25.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/xmXMtbF/mujer-portrait-39.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/Kbh4Jm3/mujer-portrait-14.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/wNYwhH4/mujer-portrait-38.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/bsCpRNB/mujer-portrait-13.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+
+    {
+        "url": "https://i.ibb.co/8sY8HqN/mujer-portrait-31.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/pLpKh0W/mujer-portrait-06.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/dMb0Lwn/mujer-portrait-30.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/t24wD5M/mujer-portrait-05.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "tímida"
+    },
+    {
+        "url": "https://i.ibb.co/ngPSYMT/mujer-portrait-43.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "claro",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/VHh4PWn/mujer-portrait-18.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/pzWjZbZ/mujer-portrait-34.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/yqwDMBg/mujer-portrait-17.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/HDZj88x/mujer-portrait-35.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/MssLrnR/mujer-portrait-10.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/pzWjZbZ/mujer-portrait-34.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/p17qzdr/mujer-portrait-09.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+
+    {
+        "url": "https://i.ibb.co/S3Pt4Xj/mujer-portrait-27.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/MnZYvSR/mujer-portrait-02.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/48Njw0J/mujer-portrait-26.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/rQ390Wb/mujer-portrait-01.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "negro",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/N6PdBQY/mujer-portrait-48.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "claro",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/BzvK2hD/mujer-portrait-24.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/KVsx8nh/mujer-portrait-40.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/dJZH9VD/mujer-portrait-23.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/FHSYDN9/mujer-portrait-41.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/rQqDxvn/mujer-portrait-16.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/KVsx8nh/mujer-portrait-40.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/Z8w10QH/mujer-portrait-15.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+
+    {
+        "url": "https://i.ibb.co/3M8Xt51/mujer-portrait-33.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/KmRt7kT/mujer-portrait-08.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/gwjfxYt/mujer-portrait-32.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/Qcjvdg9/mujer-portrait-07.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "rubio",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/N6PdBQY/mujer-portrait-48.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "claro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/PQtLVh1/mujer-portrait-22.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/wNYwhH4/mujer-portrait-38.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/hW5mqbS/mujer-portrait-21.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "claro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/xmXMtbF/mujer-portrait-39.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/Kbh4Jm3/mujer-portrait-14.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/wNYwhH4/mujer-portrait-38.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "castaño",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/bsCpRNB/mujer-portrait-13.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "castaño",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+
+    {
+        "url": "https://i.ibb.co/8sY8HqN/mujer-portrait-31.jpg",
+        "skintone": "claro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/pLpKh0W/mujer-portrait-06.jpg",
+        "skintone": "claro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/dMb0Lwn/mujer-portrait-30.jpg",
+        "skintone": "oscuro",
+        "freckles": "si",
+        "eyescolor": "negro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
+    },
+    {
+        "url": "https://i.ibb.co/t24wD5M/mujer-portrait-05.jpg",
+        "skintone": "oscuro",
+        "freckles": "no",
+        "eyescolor": "negro",
+        "haircolor": "pelirrojo",
+        "zodiacsign": "atrevida"
     }
 ]

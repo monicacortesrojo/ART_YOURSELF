@@ -1,102 +1,31 @@
 [{
         "id": 1,
-        "feature": "genre",
-        "title": "¿Eres hombre o mujer?",
-        "answers": ["hombre", "mujer"]
+        "feature": "skintone",
+        "title": "¿De qué tono es tu piel?",
+        "answers": ["claro", "oscuro"]
     },
     {
         "id": 2,
-        "feature": "skintone",
-        "title": "¿De qué tono es tu piel?",
-        "answers": ["claro", "medio", "oscuro"]
-    },
-    {
-        "id": 3,
         "feature": "freckles",
         "title": "¿Tienes pecas?",
         "answers": ["si", "no"]
     },
     {
-        "id": 4,
-        "feature": "faceshape",
-        "title": "¿Cuál es la forma de tu cara?",
-        "answers": ["ovalada", "redonda", "cuadrada", "corazón"]
-    },
-    {
-        "id": 5,
-        "feature": "eyeshape",
-        "title": "¿Cómo es la forma de tus ojos?",
-        "answers": ["almendrados", "saltones", "rasgados"]
-    },
-    {
-        "id": 6,
+        "id": 3,
         "feature": "eyescolor",
         "title": "¿Cuál es tu color de ojos?",
-        "answers": ["azul", "verde", "castaño", "negro"]
+        "answers": ["claro", "castaño", "negro"]
     },
     {
-        "id": 7,
-        "feature": "eyebrows",
-        "title": "¿Qué forma tienen tus cejas?",
-        "answers": ["finas", "gruesas"]
-    },
-    {
-        "id": 8,
-        "feature": "noseshape",
-        "title": "¿Cómo es la forma de tu nariz?",
-        "answers": ["aguileña", "ancha", "chata", "respingona"]
-    },
-    {
-        "id": 9,
-        "feature": "lips",
-        "title": "¿Cómo son tus labios?",
-        "answers": ["delgados", "gruesos", "grosor medio"]
-    },
-    {
-        "id": 10,
+        "id": 4,
         "feature": "haircolor",
         "title": "¿De qué color es tu pelo?",
         "answers": ["negro", "rubio", "castaño", "pelirrojo"]
     },
     {
-        "id": 11,
-        "feature": "hairstyle",
-        "title": "¿Cuál es tu peinado?",
-        "answers": [
-            "melena larga lisa",
-            "melena larga ondulada",
-            "melena larga rizada",
-            "melena larga lisa con flequillo",
-            "melena larga ondulada con flequillo",
-            "melena larga rizada con flequillo",
-            "melena corta lisa",
-            "melena corta ondulada",
-            "melena corta rizada",
-            "melena corta lisa con flequillo",
-            "melena corta ondulada con flequillo",
-            "melena corta rizada con flequillo",
-            "rapado",
-            "tupé",
-            "rizado muy corto"
-        ]
-    },
-    {
-        "id": 12,
+        "id": 5,
         "feature": "zodiacsign",
-        "title": "¿Cuál es tu signo del zodiaco?",
-        "answers": [
-            "aries",
-            "tauro",
-            "géminis",
-            "cáncer",
-            "leo",
-            "virgo",
-            "libra",
-            "escorpio",
-            "sagitario",
-            "capricornio",
-            "acuario",
-            "piscis"
-        ]
+        "title": "¿Cómo es tu personalidad?",
+        "answers": ["tímida", "atrevida"]
     }
 ]
